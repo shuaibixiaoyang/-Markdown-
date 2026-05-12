@@ -1,0 +1,66 @@
+{
+  "format": "cutemarked-offline-dict",
+  "version": 1,
+  "entries": [
+    {
+      "source": "en",
+      "target": "zh",
+      "term": "hello",
+      "translation": "你好"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "term": "markdown",
+      "translation": "Markdown"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "term": "offline dictionary",
+      "translation": "离线词典"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "term": "rate limit",
+      "translation": "速率限制"
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "term": "security",
+      "translation": "安全"
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "term": "翻译设置",
+      "translation": "translation settings"
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "term": "离线词典",
+      "translation": "offline dictionary"
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "term": "速率限制",
+      "translation": "rate limit"
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "term": "应用程序",
+      "translation": "application"
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "term": "文档",
+      "translation": "document"
+    }
+  ]
+}

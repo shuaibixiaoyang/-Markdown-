@@ -1,0 +1,53 @@
+#
+# Discount by David Parsons
+#
+# Github : https://github.com/Orc/discount
+# Webpage: http://www.pell.portland.or.us/~orc/Code/discount/
+#
+QT       -= core gui
+
+TARGET = discount
+TEMPLATE = lib
+DEF_FILE = discount.def
+
+# macOS: 设置 dylib 的 install_name 使用 @rpath 前缀
+macx: QMAKE_SONAME_PREFIX = @rpath
+
+# compile output is unreadable with -Wall
+CONFIG += warn_off
+
+SOURCES += \
+    mkdio.c \
+    markdown.c \
+    dumptree.c \
+    generate.c \
+    resource.c \
+    docheader.c \
+    version.c \
+    toc.c \
+    css.c \
+    xml.c \
+    Csio.c \
+    xmlpage.c \
+    basename.c \
+    emmatch.c \
+    github_flavoured.c \
+    setup.c \
+    tags.c \
+    html5.c \
+    flags.c
+
+HEADERS += \
+    mkdio.h \
+    markdown.h \
+    tags.h \
+    config.h
+
+unix:!symbian {
+    maemo5 {
+        target.path = /opt/usr/lib
+    } else {
+        target.path = /usr/lib
+    }
+    INSTALLS += target
+}

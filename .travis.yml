@@ -1,0 +1,28 @@
+language: cpp
+compiler:
+  - g++
+  - clang
+before_install:
+  - sudo apt-get update -qq
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+install:
+  - sudo apt-get install -qq libhunspell-dev libssl-dev
+  - sudo apt-get install -qq qt6-base-dev qt6-tools-dev-tools qt6-webengine-dev qt6-svg-dev qt6-multimedia-dev libqt6charts6-dev qt6-websockets-dev qt6-pdf-dev
+before_script:
+  - lrelease app/translations/cutemarked_cs.ts -qm app/translations/cutemarked_cs.qm
+  - lrelease app/translations/cutemarked_de.ts -qm app/translations/cutemarked_de.qm
+  - lrelease app/translations/cutemarked_el.ts -qm app/translations/cutemarked_el.qm
+  - lrelease app/translations/cutemarked_es.ts -qm app/translations/cutemarked_es.qm
+  - lrelease app/translations/cutemarked_fr.ts -qm app/translations/cutemarked_fr.qm
+  - lrelease app/translations/cutemarked_ja.ts -qm app/translations/cutemarked_ja.qm
+  - lrelease app/translations/cutemarked_pt_BR.ts -qm app/translations/cutemarked_pt_BR.qm
+  - lrelease app/translations/cutemarked_ru.ts -qm app/translations/cutemarked_ru.qm
+  - lrelease app/translations/cutemarked_zh_CN.ts -qm app/translations/cutemarked_zh_CN.qm
+script:
+  - cd 3rdparty/discount && ./configure.sh --with-id-anchor && make && sudo make install ; cd ../..
+  - cd 3rdparty/hoedown && qmake6 QMAKE_CC=$CC hoedown.pro && make && sudo make install ; cd ../..
+  - qmake6 QMAKE_CXX=$CXX CuteMarkEd.pro "CONFIG += with_hoedown"
+  - make -j"$(nproc)"
+  - make check
+  - sudo make install

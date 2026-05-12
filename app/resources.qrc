@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/css">
+        <file alias="markdown.css">styles/markdown.css</file>
+        <file alias="solarized-dark.css">styles/solarized-dark.css</file>
+        <file alias="solarized-light.css">styles/solarized-light.css</file>
+        <file alias="github.css">styles/github.css</file>
+        <file alias="clearness.css">styles/clearness.css</file>
+        <file alias="clearness-dark.css">styles/clearness-dark.css</file>
+        <file alias="byword-dark.css">styles/byword-dark.css</file>
+    </qresource>
+    <qresource prefix="/theme">
+        <file alias="solarized-dark.txt">themes/solarized-dark.txt</file>
+        <file alias="solarized-dark+.txt">themes/solarized-dark+.txt</file>
+        <file alias="solarized-light.txt">themes/solarized-light.txt</file>
+        <file alias="solarized-light+.txt">themes/solarized-light+.txt</file>
+        <file alias="default.txt">themes/default.txt</file>
+        <file alias="default+.txt">themes/default+.txt</file>
+        <file alias="clearness-dark+.txt">themes/clearness-dark+.txt</file>
+        <file alias="clearness-dark.txt">themes/clearness-dark.txt</file>
+        <file alias="byword-dark.txt">themes/byword-dark.txt</file>
+        <file alias="byword-dark+.txt">themes/byword-dark+.txt</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>template.html</file>
+        <file>syntax.html</file>
+        <file>syntax_de.html</file>
+        <file>syntax_cs.html</file>
+        <file>syntax_el.html</file>
+        <file>syntax_zh_CN.html</file>
+        <file>markdown-snippets.json</file>
+        <file>syntax_ja.html</file>
+        <file>syntax_es.html</file>
+        <file>syntax_pt_BR.html</file>
+        <file>syntax_id.html</file>
+        <file>syntax_da.html</file>
+        <file>template_presentation.html</file>
+        <file>builtin-htmlpreview-themes.json</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="icon-close.png">images/icon-close.png</file>
+        <file>app-icon.ico</file>
+        <file alias="app-icon-64.png">icons/64x64/cutemarked.png</file>
+    </qresource>
+    <qresource prefix="/scripts">
+        <file alias="highlight.js/highlight.pack.js">scripts/highlight.js/highlight.pack.js</file>
+        <file alias="highlight.js/styles/default.css">scripts/highlight.js/styles/default.css</file>
+        <file alias="highlight.js/styles/solarized_light.css">scripts/highlight.js/styles/solarized_light.css</file>
+        <file alias="highlight.js/styles/github.css">scripts/highlight.js/styles/github.css</file>
+        <file alias="highlight.js/styles/solarized_dark.css">scripts/highlight.js/styles/solarized_dark.css</file>
+        <file alias="mermaid/mermaid.full.min.js">scripts/mermaid/mermaid.full.min.js</file>
+        <file alias="mermaid/mermaid.css">scripts/mermaid/mermaid.css</file>
+    </qresource>
+</RCC>

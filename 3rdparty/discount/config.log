@@ -1,0 +1,13 @@
+[echo -n] works
+Configuring for [markdown]
+Looking for cpp
+CPP=[/usr/bin/cpp], CPPFLAGS=[-I/opt/homebrew/opt/qt@5/include]
+looking for install
+ (/usr/bin/install)
+checking out the C compiler
+ngc32917.c:2:1: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+    2 | main()
+      | ^
+      | int
+1 error generated.
+ does not compile code properly

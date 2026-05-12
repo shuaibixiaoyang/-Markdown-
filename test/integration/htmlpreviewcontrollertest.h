@@ -1,0 +1,35 @@
+﻿// 文件说明：test\integration\htmlpreviewcontrollertest.h
+// 该文件属于项目代码，用于实现当前模块的核心职责。
+// 下方代码为项目原有实现，本次补充的是便于阅读和维护的中文注释。
+#ifndef HTMLPREVIEWCONTROLLERTEST_H
+#define HTMLPREVIEWCONTROLLERTEST_H
+
+#include <QObject>
+class QWebEngineView;
+class HtmlPreviewController;
+
+class HtmlPreviewControllerTest : public QObject
+{
+    Q_OBJECT
+
+private slots:
+    void initTestCase();
+    void cleanupTestCase();
+
+    void increasesZoomFactorOnZoomIn();
+    void decreasesZoomFactorOnZoomOut();
+    void resetsZoomFactorOnZoomReset();
+
+    void zoomsInOnCtrlPlusKeyPress();
+    void zoomsOutOnCtrlMinusKeyPress();
+    void resetsZoomOnCtrlZeroKeyPress();
+
+    void setupsNetworkDiskCache();
+
+private:
+    QWebEngineView *webView = nullptr;
+    HtmlPreviewController *controller = nullptr;
+};
+
+#endif // HTMLPREVIEWCONTROLLERTEST_H
+
